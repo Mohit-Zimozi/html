@@ -8,94 +8,20 @@
     <meta name="description" content="practice html">
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
     <link rel="icon" type="image/png" href="favicon.png">
-    <style>
-        body {
-            margin-top: 0px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: burlywood;
-            background-image: url('images/pattern.png');
-        }
+    <link rel="stylesheet" href="style.css" type="text/css">
 
-        #mainheader {
-            background-color: cornsilk;
-
-        }
-
-        nav {
-            height: 70px;
-            width: 1280px;
-            margin: 0 auto 20px;
-        }
-
-        #leftmenu {
-            float: left;
-            width: 25%;
-            margin-bottom: 25px;
-        }
-
-        .searchbox {
-            margin: 10px 10px;
-            padding: 5px;
-            width: 280px
-        }
-
-        #main {
-            float: right;
-            width: 75%;
-            margin-bottom: 25px;
-        }
-
-        footer {
-            clear: both;
-            width: 100%;
-        }
-
-        header,
-        nav,
-        aside,
-        main,
-        footer,
-        section,
-        article,
-        figure {
-            display: block;
-        }
-        
-        table, td, th {
-            border: 1px solid green;
-            border-collapse: collapse;
-            padding: 5px;
-        }
-        nav>ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav>ul>li {
-            float: left;
-        }
-        nav>ul>li a {
-            display: block;
-            text-align: center;
-            padding: 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
 </head>
 
 <body>
     <header id="mainheader">
         <nav>
             <ul>
-                <li><img src="images/cake.svg" height="60" /></li>            
+                <li><img src="images/cake.svg" height="60" /></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="piepage.html">All Pies</a></li>
                 <li><a href="applepie.html">Apple Pie</a></li>
                 <li><a href="about.html">About</a></li>
-                </ul>
+            </ul>
         </nav>
 
     </header>
@@ -108,10 +34,10 @@
             </header>
             <input type="search" class="searchbox" placeholder="type any dish" />
             <ul>
-            <li><a href="piepage.html">Link 1- Pie Page</a></li>
-            <li><a href="/index.html#history">History</a></li>
-            <li><a href="/index.html#ad">Promotions</a></li>
-            <li><a href="about.html">About</a></li>
+                <li><a href="piepage.html">Link 1- Pie Page</a></li>
+                <li><a href="/index.html#history">History</a></li>
+                <li><a href="/index.html#ad">Promotions</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </aside>
         <main id="main">
@@ -129,81 +55,81 @@
                     </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td colspan="5">
-                        Here are all the dishes!!
-                    </td>
-                </tr>
-                <tr>
-                    <td rowspan="2"><img src="/images/products/cheesecake.jpg" width="150"/> </td>
-                    <td>Cheese Cake. Todays Promotional item</td>
-                    <td>Enjoy Plain Flavor. Chef's Special</td>
-                    <td>$12.99</td>
-                    <td>View Details</td>
-                </tr>
-                <tr>
-                    <td>Small Cheese Cake</td>
-                    <td>Enjoy Extra Flavor</td>
-                    <td>$11.99</td>
-                    <td>View Details</td>
-                </tr>
-                <tr>
-                    <td><img src="/images/products/cherrypiesmall copy.jpg" width="150"/> </td>
-                    <td>Small Cherry pie</td>
-                    <td>Enjoy Extra Flavor</td>
-                    <td>$11.99</td>
-                    <td>View Details</td>
-                </tr>
-                <tr>
-                    <td><img src="/images/products/christmasapplepiesmall.jpg" width="150"/> </td>
-                    <td>Small Christmas apple pie</td>
-                    <td>Enjoy Extra Flavor</td>
-                    <td>$11.99</td>
-                    <td><a href="applepie.html">View Details</a></td>
-                </tr>
-                <tr>
-                    <td><img src="/images/products/cranberrypiesmall.jpg" width="150"/> </td>
-                    <td>Small Cranberry pie</td>
-                    <td>Enjoy Extra Flavor</td>
-                    <td>$11.99</td>
-                    <td>View Details</td>
-                </tr>
-                <tr>
-                    <td><img src="/images/products/peachpiesmall.jpg" width="150"/> </td>
-                    <td>Small peach pie</td>
-                    <td>Enjoy Extra Flavor</td>
-                    <td>$11.99</td>
-                    <td>View Details</td>
-                </tr>
-                <tr>
-                    <td><img src="/images/products/pumpkinpiesmall.jpg" width="150"/> </td>
-                    <td>Small Pumpkin pie</td>
-                    <td>Enjoy Extra Flavor</td>
-                    <td>$11.99</td>
-                    <td>View Details</td>
-                </tr>
-                <tr>
-                    <td><img src="/images/products/rhubarbpiesmall.jpg" width="150"/> </td>
-                    <td>Small Rhubarb pie</td>
-                    <td>Enjoy Extra Flavor</td>
-                    <td>$11.99</td>
-                    <td>View Details</td>
-                </tr>
-                <tr>
-                    <td><img src="/images/products/strawberrycheesecakesmall.jpg" width="150"/> </td>
-                    <td>Small strawberry cheese pie</td>
-                    <td>Enjoy Extra Flavor</td>
-                    <td>$11.99</td>
-                    <td>View Details</td>
-                </tr>
-                <tr>
-                    <td><img src="/images/products/strawberrypiesmall.jpg" width="150"/> </td>
-                    <td>Small strawberry pie</td>
-                    <td>Enjoy Extra Flavor</td>
-                    <td>$11.99</td>
-                    <td>View Details</td>
-                </tr>
-            </tbody>
+                    <tr>
+                        <td colspan="5">
+                            Here are all the dishes!!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><img src="/images/products/cheesecake.jpg" width="150" /> </td>
+                        <td>Cheese Cake. Todays Promotional item</td>
+                        <td>Enjoy Plain Flavor. Chef's Special</td>
+                        <td>$12.99</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td>Small Cheese Cake</td>
+                        <td>Enjoy Extra Flavor</td>
+                        <td>$11.99</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/products/cherrypiesmall copy.jpg" width="150" /> </td>
+                        <td>Small Cherry pie</td>
+                        <td>Enjoy Extra Flavor</td>
+                        <td>$11.99</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/products/christmasapplepiesmall.jpg" width="150" /> </td>
+                        <td>Small Christmas apple pie</td>
+                        <td>Enjoy Extra Flavor</td>
+                        <td>$11.99</td>
+                        <td><a href="applepie.html">View Details</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/products/cranberrypiesmall.jpg" width="150" /> </td>
+                        <td>Small Cranberry pie</td>
+                        <td>Enjoy Extra Flavor</td>
+                        <td>$11.99</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/products/peachpiesmall.jpg" width="150" /> </td>
+                        <td>Small peach pie</td>
+                        <td>Enjoy Extra Flavor</td>
+                        <td>$11.99</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/products/pumpkinpiesmall.jpg" width="150" /> </td>
+                        <td>Small Pumpkin pie</td>
+                        <td>Enjoy Extra Flavor</td>
+                        <td>$11.99</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/products/rhubarbpiesmall.jpg" width="150" /> </td>
+                        <td>Small Rhubarb pie</td>
+                        <td>Enjoy Extra Flavor</td>
+                        <td>$11.99</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/products/strawberrycheesecakesmall.jpg" width="150" /> </td>
+                        <td>Small strawberry cheese pie</td>
+                        <td>Enjoy Extra Flavor</td>
+                        <td>$11.99</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/products/strawberrypiesmall.jpg" width="150" /> </td>
+                        <td>Small strawberry pie</td>
+                        <td>Enjoy Extra Flavor</td>
+                        <td>$11.99</td>
+                        <td>View Details</td>
+                    </tr>
+                </tbody>
             </table>
         </main>
         <footer>
@@ -218,7 +144,3 @@
 </body>
 
 </html>
-<!--
-                
-                <hr>
-                

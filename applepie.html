@@ -8,91 +8,16 @@
     <meta name="description" content="practice html">
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
     <link rel="icon" type="image/png" href="favicon.png">
-    <style>
-        body {
-            margin-top: 0px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: burlywood;
-            background-image: url('images/pattern.png');
-        }
+    <link rel="stylesheet" href="style.css" type="text/css">
 
-        #mainheader {
-            background-color: cornsilk;
-
-        }
-
-        nav {
-            height: 70px;
-            width: 1280px;
-            margin: 0 auto 20px;
-        }
-
-        #leftmenu {
-            float: left;
-            width: 25%;
-            margin-bottom: 25px;
-        }
-
-        .searchbox {
-            margin: 10px 10px;
-            padding: 5px;
-            width: 280px
-        }
-
-        #main {
-            float: right;
-            width: 75%;
-            margin-bottom: 25px;
-        }
-
-        #fc {
-            text-align: center;
-        }
-
-        footer {
-            clear: both;
-            width: 100%;
-        }
-
-        header,
-        nav,
-        aside,
-        main,
-        footer,
-        section,
-        article,
-        figure {
-            display: block;
-        }
-
-        nav>ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav>ul>li {
-            float: left;
-        }
-
-        nav>ul>li a {
-            display: block;
-            text-align: center;
-            padding: 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
     <script>
         function save() {
             localStorage.setItem("applepie", true);
         }
-        window.onload = function () {
+        window.onload = function() {
             var favourite = document.getElementById('favourite');
             if (window.localStorage) {
-                var storage= window.localStorage;
+                var storage = window.localStorage;
                 if (storage.getItem('applepie') == 'true') {
                     favourite.innerHTML = "Apple Pie is set as your favourites";
                 }
@@ -133,8 +58,7 @@
             <article>
                 <header>
                     <h1 style="font-size: 40px; color: blue;">My First Hand-on Pages!
-                        <br>
-                        World Famous Apple Pie!
+                        <br> World Famous Apple Pie!
                     </h1>
                 </header>
                 <figure>
@@ -149,16 +73,9 @@
                     Our history
                 </h2>
                 <p style="font-family: Verdana; font-weight: bold; color: blueviolet;">
-                    In these pages I am trying to create pages to start my practice.
-                    Download <i>Microsoft visual studio code</i>, and get <b>started!!</b>
-                    <br>
-                    For many years, <b>Bethany</b> has been baking the most delicious pies at her home. In 2013, we
-                    opened our first
-                    store in Brussels (Belgium) in a cosy little street near the Grand Market. People from all over the
-                    world fell
-                    in love with the soft cakes, <em>heavenly cheese cakes</em>, spicy apple pies... The store became a
-                    success
-                    in no time.
+                    In these pages I am trying to create pages to start my practice. Download <i>Microsoft visual studio code</i>, and get <b>started!!</b>
+                    <br> For many years, <b>Bethany</b> has been baking the most delicious pies at her home. In 2013, we opened our first store in Brussels (Belgium) in a cosy little street near the Grand Market. People from all over the world fell in
+                    love with the soft cakes, <em>heavenly cheese cakes</em>, spicy apple pies... The store became a success in no time.
                     <br>
                     <br>
                     <i>In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop moved into a larger
@@ -201,4 +118,3 @@
 <!--
                 
                 <hr>
-                
