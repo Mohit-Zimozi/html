@@ -1,0 +1,78 @@
+body {
+    margin-top: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: burlywood;
+    background-image: url('images/pattern.png');
+}
+
+#mainheader {
+    background-color: cornsilk;
+}
+
+nav {
+    height: 70px;
+    width: 1280px;
+    margin: 0 auto 20px;
+}
+
+#leftmenu {
+    float: left;
+    width: 25%;
+    margin-bottom: 25px;
+}
+
+.searchbox {
+    margin: 10px 10px;
+    padding: 5px;
+    width: 280px
+}
+
+#main {
+    float: right;
+    width: 75%;
+    margin-bottom: 25px;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+}
+
+header,
+nav,
+aside,
+main,
+footer,
+section,
+article,
+figure {
+    display: block;
+}
+
+table,
+td,
+th {
+    border: 1px solid green;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav>ul>li a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
