@@ -40,6 +40,10 @@ footer {
     width: 100%;
 }
 
+figcaption {
+    font-weight: bold;
+}
+
 header,
 nav,
 aside,
