@@ -8,52 +8,63 @@
     <meta name="description" content="practice html">
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
     <link rel="icon" type="image/png" href="https://mohit-zimozi.github.io/html/favicon.png">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: burlywood;
+            background-image: url('images/pattern.png');
+            }
+        #mainheader {
+        background-color: cornsilk;
+            }
+    </style>
 </head>
 
 <body>
     <header id="mainheader">
         <nav>
-            <ul>
+            <ul class="list-unstyled d-flex flex-column flex-sm-row justify-content-start">
                 <li><img src="images/cake.svg" height="60" /></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="piepage.html">All Pies</a></li>
-                <li><a href="applepie.html">Apple Pie</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="https://mohit-zimozi.github.io/html/Start/Geolocation.html" target="_blank">Geolocation</a></li>
-                <li><a href="map.html" target="_blank">Map</a></li>
-                <li><a href="https://mohit-zimozi.github.io/html/bs4/applepie-bs4.html" target="_blank">New Website</a></li>
+                <li><a href="index.html" class="btn bg-success m-2">Home</a></li>
+                <li><a href="piepage.html" class="btn bg-success m-2">All Pies</a></li>
+                <li><a href="applepie.html" class="btn bg-success m-2">Apple Pie</a></li>
+                <li><a href="about.html" class="btn bg-success m-2">About</a></li>
+                <li><a href="https://mohit-zimozi.github.io/html/Start/Geolocation.html" target="_blank" class="btn bg-success m-2">Geolocation</a></li>
+                <li><a href="map.html" target="_blank" class="btn bg-success m-2">Map</a></li>
+                <li><a href="https://mohit-zimozi.github.io/html/bs4/applepie-bs4.html" target="_blank" class="btn bg-success m-2">New Website</a></li>
             </ul>
         </nav>
 
     </header>
-    <div style="width:1280px; margin-left: auto; margin-right: auto;">
-
-        <aside id="leftmenu">
-            <a href="index.html"><img src="images/bethanylogo.png" width="300" /></a>
-            <header>
-                <h4 style="text-align: center; ">Browse the menu!</h4>
-            </header>
-            <input type="search" class="searchbox" placeholder="type any dish" />
-            <ul>
-                <li><a href="piepage.html">Link 1- Pie Page</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#ad">Promotions</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="https://mohit-zimozi.github.io/html/Start/Geolocation.html" target="_blank">Geolocation</a></li>
-                <li><a href="map.html" target="_blank">Map</a></li>
-                <li><a href="https://mohit-zimozi.github.io/html/bs4/applepie-bs4.html" target="_blank">New Website</a></li>
-            </ul>
-        </aside>
-        <main id="main">
+    <div class="container">
+        <div class="row">
+            <aside id="leftmenu" class="col-12 col-sm-6 col-md-3 d-none d-sm-block">
+                 <a href="index.html"><img src="images/bethanylogo.png" class="img-fluid" /></a>
+                 <h4 style="text-align: center; ">Browse the menu!</h4>
+                 <input type="search" class="searchbox col-12" placeholder="type any dish" />
+                 <ul class="col-12">
+                     <li><a href="piepage.html">Link 1- Pie Page</a></li>
+                     <li><a href="#history">History</a></li>
+                     <li><a href="#ad">Promotions</a></li>
+                     <li><a href="about.html">About</a></li>
+                     <li><a href="https://mohit-zimozi.github.io/html/Start/Geolocation.html" target="_blank">Geolocation</a></li>
+                     <li><a href="map.html" target="_blank">Map</a></li>
+                     <li><a href="https://mohit-zimozi.github.io/html/bs4/applepie-bs4.html" target="_blank">New Website</a></li>
+                </ul>
+            </aside>
+            <main id="main" class="col-12 col-sm-6 col-md-9">
             <article>
                 <header>
-                    <h1 style="font-size: 40px; color: blue;">My First Hand-on Pages!
+                    <h1 style="font-size: 32px; color: blue;">My First Hand-on Pages!
                         <br> Welcome to Bethany's Pie Shop!
                     </h1>
                 </header>
                 <figure>
-                    <img src="images/bethany-fullsize.jpg" alt="Bethany at her shop" width="950" />
+                    <img src="images/bethany-fullsize.jpg" alt="Bethany at her shop" 
+                    class="img-fluid float-none float-md-right px-md-2"/>
                     <figcaption>Bethany at her shop</figcaption>
                 </figure>
                 <h2 id="history">
@@ -75,15 +86,34 @@
                 </p>
 
             </article>
-            <section>
-                <h3 id="ad" style="font-family: Verdana" ;> Our Daily Promotions </h3>
-                <h4>Cheese Cake</h4>
-                $12.99-serves 4<br>
-                <img src="cheesecake.jpg" width="500px " height="300px" ;>
+            <section class="row">
+                <div class="col">
+                <h3 id="ad" style="font-family: Verdana";> Our Daily Promotions </h3>
+                </div>
+                <div class="row pl-3">
+                <div class="col-12 col-md-3 my-2">
+                <h4>Small Cheese Cake</h4>
+                $12.99-serves 2<br>
+                <img src="cheesecake.jpg" class="img-fluid" ;>
                 <br>
+                </div>
+                <div class="col=12 col-md-3 my-2">
+                    <h4>Double Cheese Cake</h4>
+                    $18.99-serves 3<br>
+                    <img src="cheesecake.jpg" class="img-fluid" ;>
+                    <br>
+                </div>
+                <div class="col-12 col-md-3 mt-2 mb-4">
+                    <h4>Super Cheese Cake</h4>
+                    $22.99-serves 4<br>
+                    <img src="cheesecake.jpg" class="img-fluid" ;>
+                    <br>
+                </div>
+                </div>
             </section>
-        </main>
-        <footer>
+            </main>
+        </div>
+        <footer class="container-fluid bg-light">
             <p>
                 Address:
             </p>
@@ -93,8 +123,5 @@
 
 
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </html>
-<!--
-                
-                <hr>
