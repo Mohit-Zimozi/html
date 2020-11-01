@@ -25,21 +25,40 @@
 
 <body>
     <header id="mainheader">
-        <nav>
-            <ul class="list-unstyled d-flex flex-column flex-sm-row justify-content-start">
-                <li><img src="images/cake.svg" height="60" /></li>
-                <li><a href="index.html" class="btn bg-success m-2">Home</a></li>
-                <li><a href="piepage.html" class="btn bg-success m-2">All Pies</a></li>
-                <li><a href="applepie.html" class="btn bg-success m-2">Apple Pie</a></li>
-                <li><a href="about.html" class="btn bg-success m-2">About</a></li>
-                <li><a href="https://mohit-zimozi.github.io/html/Start/Geolocation.html" target="_blank" class="btn bg-success m-2">Geolocation</a></li>
-                <li><a href="map.html" target="_blank" class="btn bg-success m-2">Map</a></li>
-                <li><a href="https://mohit-zimozi.github.io/html/bs4/applepie-bs4.html" target="_blank" class="btn bg-success m-2">New Website</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"></a>
+              <img src="images/cake.svg" width="30" height="30" class="d-inline-block justify-left align-top" alt="Bethany's Pie Shop">
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Pies
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="piepage.html">Pie Page</a>
+                <a class="dropdown-item" href="applepie.html">Apple Pie</a>
+                  </div>
+                </li> 
+                <li class="nav-item"><a class="nav-link" href="about.html" class="btn bg-success m-2">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://mohit-zimozi.github.io/html/Start/Geolocation.html" target="_blank" class="btn bg-success m-2">Geolocation</a></li>
+                <li class="nav-item"><a class="nav-link" href="map.html" target="_blank" class="btn bg-success m-2">Map</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://mohit-zimozi.github.io/html/bs4/applepie-bs4.html" target="_blank" class="btn bg-success m-2">New Website</a></li>
+              </ul>
+            </div>
+          </div>  
         </nav>
-
+    
     </header>
     <div class="container">
+        <div class="row" style="height: 5rem;"></div>
         <div class="row">
             <aside id="leftmenu" class="col-12 col-sm-6 col-md-3 d-none d-sm-block">
                  <a href="index.html"><img src="images/bethanylogo.png" class="img-fluid" /></a>
@@ -124,4 +143,6 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/bootstrap.js"></script>
 </html>
