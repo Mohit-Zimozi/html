@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
+  <head>
     <meta charset="utf=8">
     <title>My First Hands-on!</title>
     <meta name="author" content="first">
     <meta name="description" content="practice html">
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
     <link rel="icon" type="image/png" href="https://mohit-zimozi.github.io/html/favicon.png">
-    
-    <style>
+        <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin-left: auto;
@@ -18,45 +17,49 @@
             background-image: url('images/pattern.png');
             }
         #mainheader {
-        background-color: cornsilk;
+            background-color: cornsilk;
+            }
+        .map {
+            height: 500px;
+            width: 100%;
             }
     </style>
 </head>
 
 <body>
-    <header id="mainheader">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
-          <div class="container">
-            <a class="navbar-brand" href="index.html"></a>
-              <img src="images/cake.svg" width="30" height="30" class="d-inline-block justify-left align-top" alt="Bethany's Pie Shop">
+  <header id="mainheader">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"></a>
+          <img src="images/cake.svg" width="30" height="30" class="d-inline-block justify-left align-top" alt="Bethany's Pie Shop">
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Pies
               </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Pies
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="piepage.html">Pie Page</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="piepage.html">Pie Page</a>
                 <a class="dropdown-item" href="applepie.html">Apple Pie</a>
-                  </div>
-                </li> 
-                <li class="nav-item"><a class="nav-link" href="about.html" class="btn bg-success m-2">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://mohit-zimozi.github.io/html/Start/Geolocation.html" target="_blank" class="btn bg-success m-2">Geolocation</a></li>
-                <li class="nav-item"><a class="nav-link" href="map.html" target="_blank" class="btn bg-success m-2">Map</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://mohit-zimozi.github.io/html/bs4/applepie-bs4.html" target="_blank" class="btn bg-success m-2">New Website</a></li>
-              </ul>
-            </div>
-          </div>  
-        </nav>
-    
-    </header>
+              </div>
+            </li> 
+            <li class="nav-item"><a class="nav-link" href="about.html" class="btn bg-success m-2">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://mohit-zimozi.github.io/html/Start/Geolocation.html" target="_blank" class="btn bg-success m-2">Geolocation</a></li>
+            <li class="nav-item"><a class="nav-link" href="map.html" target="_blank" class="btn bg-success m-2">Map</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://mohit-zimozi.github.io/html/bs4/applepie-bs4.html" target="_blank" class="btn bg-success m-2">New Website</a></li>
+          </ul>
+        </div>
+      </div>  
+    </nav>
+
+</header>
     <div class="container">
         <div class="row" style="height: 5rem;"></div>
         <div class="row">
